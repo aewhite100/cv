@@ -1,0 +1,335 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+%\usepackage[T1]{fontenc}
+%\usepackage[sc]{mathpazo}
+
+% Set your name here
+\def\name{Alexander E. White}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {biogeography, ecology of speciation, deep learning},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\newenvironment{biblist}{%
+   \begin{list}{}{%
+     \setlength{\labelwidth}{0pt}%
+     \setlength{\labelsep}{1em}%
+     \setlength{\leftmargin}{2em}%
+     \setlength{\itemindent}{-1em}%
+   }
+}{\end{list}}
+
+\begin{document}
+
+% Place name at left
+{\LARGE \scshape \name}
+{\emph{curriculum vitae}}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.55\linewidth}
+Biodiversity Research Data Scientist \\
+Office of the Chief Information Officer \\
+Smithsonian Institution\\
+Washington, DC, USA
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    e-mail: & \href{mailto:whiteae@si.edu}{\tt WhiteAE@si.edu} \\
+    website: &\href{https://sidatasciencelab.github.io/people/leads/alex.html}{\tt datascience.si.edu}
+  \end{tabular}
+\end{minipage}
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Ecology and Evolution, University of Chicago, 2018
+  \\Dissertation: \emph{Regional influences on community structure across the tropical-temperate divide}
+
+  \item B.S. \emph{with Distinction}, Ecology and Evolutionary Biology, University of Michigan, 2009
+\end{itemize}
+
+\section*{Training}
+
+\begin{biblist}
+\item Smithsonian Institution, September 2018--2022. Machine Learning Postdoctoral Fellow, Data Science Lab. Advised by Dr. Rebecca Dikow 
+\item Smithsonian Institution, September 2018--2022. Postdoctoral Fellow, Department of Botany, National Museum of Natural History. Advised by Dr. Eric Schuettpelz
+\item University of Copenhagen, January 2016--August 2016. Visiting Scholar, Center for Macroecology, 
+\\Evolution, and Climate. Co-advised by Drs. Carsten Rahbek and Sally Keith
+\end{biblist}
+
+
+\section*{Publications}
+\subsection*{Peer-reviewed original research}
+\begin{biblist}
+
+\item Dikow RB, Ekwealor JT, Mattingly WJ, Trizna MG, Harmon E, Dikow T, Arias CF, Hodel RG, Spillane J, Tsuchiya MT, Villanueva L, \textbf{White AE}, Bursell MG, Curry T, Inema C, Geranimo-Anctil K. 2023. Let the Records Show: Attribution of Scientific Credit in Natural History Collections. \textit{International Journal of Plant Sciences}. 184, 392-404.
+
+\item Robillard AJ, Trizna MG, Ruiz‐Tafur M, Dávila Panduro EL, de Santana CD, \textbf{White AE}, Dikow RB, Deichmann JL. 2023. Application of a deep learning image classifier for identification of Amazonian fishes. \textit{Ecology and Evolution}. 13, e9987.
+
+\item Rana SK, \textbf{White AE}, Price TD. Key roles for the freezing line and disturbance in driving the low plant species richness of temperate regions. 2022. Global Ecology and Biogeography. 31, 280-293.
+
+\item \textbf{White AE}, Dey KK, Stephens M, and Price TD. 2021. Dispersal syndromes drive the formation of biogeographical regions, illustrated by the case of Wallace's Line. \textit{Global Ecology and Biogeography}. 30, 685-696.
+
+\item \textbf{White AE}, Dikow RB, Baugh M*, Jenkins A*, and Frandsen PB. 2020. Generating segmentation masks of herbarium specimens and a dataset for training segmentation models using deep learning. \textit{Applications in Plant Sciences}. 8, e11352. \textit{*undergraduate mentee}.
+
+\item  Schumm M*, \textbf{White AE}, Supriya K, and Price TD. 2020. Ecological limits as the driver of bird species richness patterns along the east Himalayan elevational gradient. \textit{American Naturalist}. 195, 802-817. \textit{*undergraduate mentee}
+
+\item \textbf{White AE}, Dey KK, Mohan DM, Stephens M, and Price TD. 2019. Regional influences on community structure across the tropical-temperate divide. \textit{Nature Communications}. 10, 2646.
+
+\item  Schumm M*, Edie SM, Collins KS, Gómez-Bahamón V, Supriya K, \textbf{White AE}, Price TD, and Jablonski D. 2019. Common latitudinal gradients in functional richness and functional evenness across marine and terrestrial systems. \textit{Proceedings of the Royal Society B}. 286, 20190745. \textit{*undergraduate mentee}
+
+\item \textbf{White AE}. 2016. Geographical barriers and dispersal propensity interact to limit range expansions of Himalayan birds. \textit{American Naturalist}. 188, 99-112.
+
+\item  Tomašových A, Kennedy JD, Betzner TJ,  Kuehnle NB, Edie S, Kim S, Supriya K, \textbf{White AE}, Rahbek C, Huang S, Price TD, and Jablonski D. 2016. Unifying latitudinal gradients in range size and  richness across marine and terrestrial systems. \textit{Proceedings of the Royal Society B}. 283, 20153027.
+\end{biblist}
+
+\subsection*{Peer-reviewed reviews and commentaries}
+\begin{biblist}
+\item Borowiec ML, Dikow RB, Frandsen PB, McKeeken A, Valentini G, \textbf{White AE}. Deep learning as a tool for ecology and evolution. Methods in Ecology and Evolution. 13, 1640-1660.
+
+\item \textbf{White AE}. 2020. Deep learning in deep time. \textit{Proceedings of the National Academy of Sciences}. 117, 29268-29270. \textit{*Commentary}.
+
+\item Pearson K, Nelson G, Aronson M, Bonnet P, Brenskelle L, Davis C, Denny E, Goëau H, Heberling JM, Joly A, Lorieul T, Mazer S, Meineke E, Stucky B, Sweeney P,\textbf{ White AE}, and Stoltis P. 2020. Machine learning using digitized herbarium specimens to accelerate phenological research. \textit{BioScience}. 70, 610-620.
+\end{biblist}
+
+\subsection*{Software}
+\begin{biblist}
+\item \textbf{White AE} and Dey KK. 2023. ecostructure: grade-of-membership clustering and visualization for ecology in R. R package version 2.0.0. https://github.com/sidatasciencelab/ecostructure
+
+\item \textbf{White AE} and Dey KK. 2018. ecostructure package for R. R package version 0.99.0.\newline https://kkdey.github.io/ecostructure/
+
+\end{biblist}
+
+\section*{Awards and Honors}
+\begin{biblist}
+\item Invited Speaker, 16\textsuperscript{th} Annual Early Career Scientist Symposium, \textit{Natural History Collections: Drivers of Innovation}. Department of Ecology and Evolution, University of Michigan, 2020
+
+\item Best Dissertation. Biological Sciences Division, University of Chicago, 2019
+\end{biblist}
+
+\section*{Grants and Fellowships}
+\begin{itemize}
+\item Smithsonian American Women's History Initiative, \textit{Ms. Attribution: building best practices for more inclusive natural history collections records}, 2023 (79,800 USD) *\textit{Co-PI}
+\item Smithsonian Latino Initiatives Pool, \textit{UCSB-Smithsonian Scholars Program: Success in Guiding Undergraduate Experiences (SIGUE)}, 2023 (195,480 USD) *\textit{Co-PI}
+\item Machine Learning Postdoctoral Fellowship, Data Science Lab, Smithsonian Institution, 2018
+\item American Society of Naturalists Travel Grant, 2017 (500 USD)
+\item GAANN Quantitative Ecology Fellowship. Dept. of Ecology and Evolution, University of Chicago, 2016
+\item National Science Foundation Graduate Research Opportunities Worldwide Fellowship, NSF and Danish National Research Fund, 2015
+\item Oxford Nanopore MinION Access Programme, 2015 (MinION device awarded)
+\item Society for the Study of Evolution Travel Grant, 2015 (500 USD)
+\item National Science Foundation Graduate Research Fellowship, 2013
+\item National Geographic Society Young Explorer Grant, 2011 (5,000 USD)
+\end{itemize}
+
+\section*{Teaching Experience}
+\subsection*{Primary Instructor}
+\begin{biblist}
+\item \emph{Data Science, Conservation, and Tropical Biology}, field course at the Smithsonian Tropical Research Institute, Panama City, Panama. University of California Santa Barbara-Smithsonian Scholars Program, August 2023 
+\item \emph{¡ERES! - Early Research Experience for Students Data Science Bootcamp}, Online. University of California Santa Barbara-Smithsonian Scholars Program, Summer 2023
+\item \emph{¡ERES! - Early Research Experience for Students Data Science Bootcamp}, Online. University of California Santa Barbara-Smithsonian Scholars Program, Summer 2022
+\item \emph{¡ERES! - Early Research Experience for Students Data Science Bootcamp}, Online. University of California Santa Barbara-Smithsonian Scholars Program, Summer 2021
+\item \emph{R for Ecology}, Online. University of California Santa Barbara-Smithsonian Scholars Program, Summer 2020
+\item \emph{Data Science, Conservation, and Tropical Biology}, field course at the Smithsonian Tropical Research Institute, Panama City, Panama. University of California Santa Barbara-Smithsonian Scholars Program, Summer 2019 
+\item Certified Software and Data Carpentry Instructor, 2018
+\item Park Ranger - Wolf Creek Environmental Education Center, Redwood National and State Parks, 2006
+\end{biblist}
+
+\subsection*{Assistantships}
+\begin{biblist}
+\item TA, \textit{Ecology of the Anthropocene}. University of Chicago, Winter 2017. 
+\\Instructor: Dr. Trevor Price
+\item TA, \textit{Ecology and Conservation}. University of Chicago, Fall 2015. 
+\\Instructor: Dr. Cathy Pfister
+\item TA, \textit{Ecology and Evolution in the Southwest: Field School}. University of Chicago, Summer 2014.
+\\Instructor: Dr. Eric Larsen
+\item TA, \textit{Environmental Ecology}. University of Chicago, Winter 2014. 
+\\Instructor: Dr. Trevor Price
+\item TA, \textit{Biology of Birds}. University of Michigan Biological Station, Summer 2010. 
+\\Instructor: Dr. David Ewert
+\end{biblist}
+
+\section*{Research Mentorship}
+\subsection*{Undergraduate mentees}
+\begin{itemize}
+\item Richard Montes-Lemus (UC Santa Barbara; 2023--)
+\item Zach Willson (UC Davis; 2023--)
+\item Alan Feria (UC Santa Barbara; June 2022--January 2023)
+\item Zumonjay Jackson (East LA College; June 2022--August 2022)
+\item Isabella Schrader (Marshall University; June 2021--August 2021)
+\item Alison Day (Stanford University; 2019--2021)
+\item Makinnon Baugh (Brigham Young University; January, 2019--2020)
+\item Abby Jenkins (Brigham Young University; January, 2019--2020)
+\item Alejandro Sanchez (UC Davis; June, 2019--August, 2019)
+\item Matthew Schumm (University of Chicago, 2014--2019)
+\end{itemize}
+\subsection*{High school mentees}
+\begin{itemize}
+\item Russell Ang (Stevenson High School, Illinois, 2013--2015)
+\item Bharadwaj Srivatsav (Stevenson High School, Illinois, 2014--2015)
+\item Jessie Wang (Stevenson High School, Illinois 2013--2014)
+\end{itemize}
+
+\section*{Talks}
+\subsection*{Invited Conference Presentations}
+\begin{biblist}
+\item \textbf{White AE}, Dikow RB, and Frandsen PB. Museum collections, deep learning, and biogeography: a global case study of ferns. Park of the \textit{Using machine learning to understand the evolution of biodiversity} symposium. Evolution. Virtual, June 2021.
+
+\item \textbf{White AE}. Biogeography of fern shapes as revealed by deep learning. University of Michigan Department of Ecology and Evolutionary Biology Early Career Scientists Symposium, \textit{Natural History Collections: Drivers of Innovation}. Ann Arbor, March 2021.
+
+\item \textbf{White AE}. Biogeography of fern leaf shapes. Applications of machine learning to the analysis and interpretation of functional traits from digitized herbarium specimens meeting. Yale University, June 2020.
+
+\item \textbf{White AE}, Dikow RB, Baugh M, Jenkins A, and Frandsen PB. Generating masks for image segmentation in digitized herbarium specimens. Part of the \textit{Machine learning: an emerging toolkit for biodiversity science using museum collections} symposium. Biodiversity Next. Leiden, Netherlands, October 2019.
+
+\item \textbf{White AE}, Trizna M, Frandsen PB, Dorr LJ, Dikow RB, and Schuettpelz E. Evaluating geographic patterns of morphological disparity in ferns and lycophytes using deep neural networks. Part of the \textit{Machine learning: an emerging toolkit for biodiversity science using museum collections} symposium. Biodiversity Next. Leiden, Netherlands, October 2019.
+
+\item \textbf{White AE}, Trizna M, Frandsen PB, Dorr LJ, Dikow RB, and Schuettpelz E. Evaluating geographic patterns of morphological disparity in ferns and lycophytes using deep neural networks. Part of the \textit{Machine Learning in Plant Biology} symposium. Botany. Tuscon, August 2019.
+
+\item \textbf{White AE.} Deep learning, biogeography, and the evolution of plants. Machine Vision for Cultural Heritage and Natural Science Collections Meeting. Yale University, April 2019.
+
+\item \textbf{White AE.} Modeling and visualizing ecological structure across the tropical- temperate divide. Section on Machine Learning. Biological Data Science. Cold Spring Harbor Laboratory, November 2018.
+\end{biblist}
+
+\subsection*{Contributed Conference Presentations}
+\begin{biblist}
+\item \textbf{White AE.} Evaluating geographic patterns of morphological disparity in ferns and lycophytes using deep neural networks. Digital Data in Biodiversity Research Conference. Yale University, June 2019.
+
+\item \emph{poster} Earl C, \textbf{White AE}, Trizna MG, Frandsen PB, Kawahara A Y, Brady SG, and Dikow RB. Using machine learning to distinguish between and discover patterns of biodiversity in insects. Biological Data Science. Cold Spring Harbor Laboratory, November, 2018.
+
+\item \emph{poster} \textbf{White AE,} Dikow RB, Trizna MG, Orli S, Schuettpelz E, Frandsen PB, and Dorr LJ. Applications of deep convolutional neural networks to digitized herbarium specimens. Biological Data Science. Cold Spring Harbor Laboratory, November, 2018.
+
+\item \textbf{White AE.} Himalayan bird communities reveal the integration of tropical, temperate and arid biomes. Conference of the American Society of Naturalists, Asilomar, CA, January 2018.
+
+\item \textbf{White AE.} Phylogenetic beta diversity across geographic and elevational gradients in Himalayan birds. Evolution. Guarujá, Brazil, June 2015.
+
+\item \textbf{White AE.} Dispersal and elevation drive regional avian richness across the Himalayas. Conference of the American Society of Naturalists, Asilomar, CA. January 2014.
+
+\item \textbf{White AE.} Evaluating acoustic signatures in a cooperatively breeding corvid. American Ornithologists' Union Meeting, Jacksonville, FL. July 2011.
+
+\item \textbf{White AE.} Repertoire size and song sharing among American Redstarts (\textit{Setophaga ruticilla}). Annual Undergraduate Research Symposium. University of Michigan Biological Station, MI, August 2009.
+\end{biblist}
+
+\subsection*{Invited Seminar Presentations}
+\begin{biblist}
+\item \textbf{White, AE.} Assembly of Himalayan Birds: Identifying the roles of history and ecology in structuring a diverse continental fauna. National Museum of Natural History Data Science Seminar. Smithsonian Institution, March 2018.
+\item \textbf{White, AE.} Geographical barriers and dispersal propensity interact to limit range expansions of Himalayan birds. Center for Macroecology, Evolution, and Climate Seminar. University of Copenhagen, March 2016.
+\item \textbf{White, AE.} Avian diversity in the Himalayas. Molecular Ecology Seminar. Dominican University, September 2015.
+\end{biblist}
+
+\section*{Research Employment}
+\begin{itemize}
+\item Tempus Inc. 2017. Data Science Intern, Research Analytics Team. (Chicago, IL) 
+\item Archbold Biological Station, 2011. Research Intern, Avian Ecology Lab. (Sebring, FL)
+\item Cornell University, 2011. Field Assistant for Dr. Emma Grieg (Queensland, AUS)
+\item University of Chicago, 2010. Field Assistant for Dr. Stephen Pruett-Jones (South Australia, AUS)
+\end{itemize}
+
+
+
+\section*{Service}
+\subsection*{Peer Review}
+\begin{biblist}
+\item Associate Editor, \emph{Ornithology} (formerly \emph{The Auk}). Areas of responsibility include: quantitative ecology, machine learning, data science, and biogeography, 2020 --
+\item Journal reviews (\emph{ad hoc}) for \emph{American Naturalist},  \emph{Applications in Plant Sciences}, \emph{The Auk: Ornithological Advances}, \emph{Biological Journal of the Linnaean Society}, \emph{Ecology Letters}, \emph{Emu--Austral Ornithology}, \emph{Global Ecology and Biogeography}, \emph{Journal of Biogeography}, \emph{Molecular Ecology Resources}, \emph{Oikos}, \emph{PeerJ}, \emph{PLOS One}, \emph{Proceedings of the National Academy of Sciences}, \emph{Proceedings of the Royal Society: B}
+\item Grant reviews (\emph{ad hoc}) for Alfred P. Sloane Foundation
+\end{biblist}
+\subsection*{Professional}
+\begin{biblist}
+\item Mentor, University of California Santa Barbara--Smithsonian Scholars Program, 2018 --
+\item Mentor, SPARK Program, Stevenson High School, 2013--2015
+\end{biblist}
+\subsection*{Departmental}
+\begin{biblist}
+\item Organized annual departmental retreat, 2017
+\item Organized weekly departmental reading group, 2016--2017
+\item Peer graduate student mentor, 2014
+\item Graduate Student Mental Health Advisory Board member, 2014
+\end{biblist}
+
+
+
+\section*{Professional Affiliations}
+\begin{itemize}
+\item American Ornithologists Union, member since 2012
+\item American Society of Naturalists, member since 2012
+\item International Biogeography Society, member since 2014
+\item Society for the Study of Evolution, member since 2014 
+\end{itemize}
+
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
